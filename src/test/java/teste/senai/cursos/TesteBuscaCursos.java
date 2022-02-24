@@ -20,9 +20,9 @@ public class TesteBuscaCursos {
 	
 	@Test
 	public void testeNavegacao() {
-		driver.get("https://www.sp.senai.br/");
+		driver.get("https://informatica.sp.senai.br/");
 		driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
-		driver.findElement(By.id("oqEstabuscando")).sendKeys("gestão");
-		driver.findElement(By.className("btnBuscaJavaScript")).click();
+		driver.findElement(By.id("Busca1_txtFiltro")).sendKeys("Excel");
+		driver.findElement(By.id("Busca1_btnBusca")).click();
 	}
 }
